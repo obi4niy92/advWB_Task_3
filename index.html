@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yevhen's Bookstore</title>
+    <!--Using a mix of my own styling and Bootstrap framework-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h4 class="display-4 hdr">Yevhen's Bookstore</h4>
+        <hr>
+        <!--Site navigation links-->
+        <nav class="navLinks">
+            <a class="btn btn-link" href="#">Home</a>
+            <a class="btn btn-link" href="#">Account</a>
+            <a class="btn btn-link" href="#">Cart</a>
+            <a class="btn btn-link" href="#">Support</a>
+        </nav>
+    </header>
+    <hr>
+    <!-- Section: Breadcrumbs -->
+    <!-- TODO: Replace all URLs with real routes -->
+    <section id="brdcrmb" class="container-fluid" aria-label="breadcrumb"> 
+        <ol class="breadcrumb m-0 bg-transparent">
+            <li class="breadcrumb-item"><a href="#">All books</a></li>
+            <li class="breadcrumb-item"><a href="#">Fiction</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sci-Fi</li>
+        </ol>
+    </section>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-10 col-lg-8">
+                <h2>Genre: Sci-Fi</h2>
+                <p>Science fiction (often shortened to sci-fi or abbreviated SF) is the genre of speculative fiction that imagines advanced and futuristic scientific or technological progress. <br><br> The elements of science fiction have evolved over time: from space exploration, extraterrestrial life, time travel, and robotics; to parallel universes, dystopian societies, and biological manipulations; and, most lately, to information technology, transhumanism, posthumanism, and environmental challenges. Science fiction often specifically explores human responses to the consequences of these types of projected or imagined scientific advances (Wikipedia, 2025).</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Section: Products -->
+    <!-- TODO: Add real images for all books -->
+    <section class="container-fluid"> 
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 col-xl-2 prodData"> 
+                <img class="bookImgPlaceholder" src="Icons/book.png" alt="Cover of The End of Eternity">
+                <p><strong>The End of Eternity</strong></p>
+                <p>Isaac Asimov</p>
+                <p>9.99 EUR</p>
+                <p class="stock-in">In stock</p>
+                <button type="button" class="icon-btn btn btn-outline-success btn-block">
+                    <span>Add to cart</span>
+                    <img src="Icons/add-to-cart.png" alt=""/>
+                </button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 col-xl-2 prodData">
+                <img class="bookImgPlaceholder" src="Icons/book.png" alt="Cover of Leviathan Wakes">
+                <p><strong>Leviathan Wakes</strong></p>
+                <p>James S. A. Corey</p>
+                <p>19.99 EUR</p>
+                <p class="stock-in">In stock</p>
+                <button type="button" class="icon-btn btn btn-outline-success btn-block">
+                    <span>Add to cart</span>
+                    <img src="Icons/add-to-cart.png" alt=""/>
+                </button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 col-xl-2 prodData">
+                <img class="bookImgPlaceholder" src="Icons/book.png" alt="Cover of Mission of Gravity">
+                <p><strong>Mission of Gravity</strong></p>
+                <p>Hal Clement</p>
+                <p>5.99 EUR</p>
+                <p class="stock-out">Out of stock</p>
+                <button type="button" class="icon-btn btn btn-outline-dark btn-block" disabled>
+                    <span>Add to cart</span>
+                    <img src="Icons/add-to-cart.png" alt=""/>
+                </button>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!--Section: Useful info for customers-->
+    <section>
+        <details>
+            <summary>FAQ</summary>
+            <details class="spoiler-1">
+                <summary>How to buy books?</summary>
+                <p><br>Simply follow the steps:</p>
+                <ol>
+                    <li>Find a book you fancy</li>
+                    <li>Click "Add to cart"</li>
+                    <li>Proceed to Cart</li>
+                    <li>Place order</li>
+                </ol>
+            </details>
+            <details class="spoiler-1">
+                <summary>Why us?</summary>
+                <p><br>You're in the right place! Here's why our bookstore is the best in the region:</p>
+                <ul>
+                    <li>Lowest prices!</li>
+                    <li>Fastest shipping!!</li>
+                    <li>Our CEO won't die of hunger!!!</li>
+                </ul>
+            </details>
+        </details>
+    </section>
+    <hr>
+    <footer>
+        <!-- Don't forget to update the year on Jan 1, 2027! -->
+        <p>Web App Development, Advanced Workbook, 2026</p>
+    </footer>
+</body>
+</html>

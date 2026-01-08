@@ -1,0 +1,47 @@
+body {
+    background-color: bisque;
+    margin: 20pt;
+    font-family: system-ui
+}
+
+.hdr {
+    font-family: fantasy
+}
+
+.navLinks .btn-link {
+    color:#98462D;
+    font-family: fantasy;
+    font-size: 18pt;
+    padding-right: 20px;    
+}
+
+.stock-in {
+    color: darkgreen;
+    font-style: italic
+}
+
+.stock-out {
+    color: darkred;
+    font-style: italic
+}
+
+.bookImgPlaceholder {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.prodData {
+    text-align: center
+}
+
+.spoiler-1 {
+    margin-left: 20px
+}
+
+footer {
+    opacity: 0.75;
+    text-align: center
+}
